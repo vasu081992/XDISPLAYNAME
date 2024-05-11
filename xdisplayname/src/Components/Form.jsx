@@ -47,7 +47,7 @@ const handleChange1 = (e)=>{
 
 <div className={styles.wrapper1}> 
 <p>First Name :  </p>
-<input  type="text" placeholder="Enter first name..."  value={inputvalue1} onChange = {handleChange1} required/>
+<input type="text" placeholder="Enter first name..."  value={inputvalue1} onChange = {handleChange1} required/>
 </div>
 <div className={styles.wrapper1}> 
 <p>Last Name :  </p>
@@ -57,7 +57,7 @@ const handleChange1 = (e)=>{
 <button type="submit" >Submit</button>
 
 { submit? (
-<p>Full Name: {inputvalue1}  {inputvalue2} </p>
+<p>Full Name: {inputvalue1} {inputvalue2} </p>
 ) : ""
 }
 
