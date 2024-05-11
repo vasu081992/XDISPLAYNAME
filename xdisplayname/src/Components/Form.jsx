@@ -16,7 +16,7 @@ const Form = ()=>{
 const formSubmit =(e)=>{
     e.preventDefault(); 
     
-    setsubmit(!submit)
+    setsubmit(true)
 }
 
 
