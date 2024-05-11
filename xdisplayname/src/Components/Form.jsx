@@ -11,12 +11,12 @@ const Form = ()=>{
 
     const [inputvalue2,setinputvalue2] = useState('');
 
-    const [submit,setsubmit] = useState(false)
+    const [submit,setsubmit] = useState(null)
 
 const formSubmit =(e)=>{
     e.preventDefault(); 
     
-    setsubmit(true)
+    setsubmit({inputvalue1,inputvalue2})
 }
 
 
@@ -57,7 +57,7 @@ const handleChange1 = (e)=>{
 <button type="submit" >Submit</button>
 
 { submit? (
-<p>Full Name: {inputvalue1} {inputvalue2} </p>
+<p>Full Name: {submit.inputvalue1} {submit.inputvalue2} </p>
 ) : ""
 }
 
