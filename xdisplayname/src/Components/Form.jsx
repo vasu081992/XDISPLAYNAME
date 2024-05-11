@@ -15,7 +15,8 @@ const Form = ()=>{
 
 const formSubmit =(e)=>{
     e.preventDefault(); 
-    setsubmit(true)
+    
+    setsubmit(!submit)
 }
 
 
@@ -46,11 +47,11 @@ const handleChange1 = (e)=>{
 
 <div className={styles.wrapper1}> 
 <p>First Name :  </p>
-<input placeholder="Enter first name..."  value={inputvalue1} onChange = {handleChange1} required/>
+<input  type="text" placeholder="Enter first name..."  value={inputvalue1} onChange = {handleChange1} required/>
 </div>
 <div className={styles.wrapper1}> 
 <p>Last Name :  </p>
-<input placeholder="Enter last name..."  value={inputvalue2} onChange = {handleChange2} required/>
+<input type="text" placeholder="Enter last name..."  value={inputvalue2} onChange = {handleChange2} required/>
 </div>
 
 <button type="submit" >Submit</button>
