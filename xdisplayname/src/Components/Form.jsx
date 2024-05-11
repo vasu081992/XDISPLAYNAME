@@ -39,6 +39,7 @@ const handleChange1 = (e)=>{
 
 
     return (
+        <>
 <form onSubmit={formSubmit}>
 
 <h1> Full Name Display</h1>
@@ -56,14 +57,14 @@ const handleChange1 = (e)=>{
 
 <button type="submit" >Submit</button>
 
-{ submit? (
-<p>Full Name: {submit.inputvalue1} {submit.inputvalue2} </p>
-) : ""
-}
 
 </form>
 
-
+{ submit? (
+    <p>Full Name: {submit.inputvalue1} {submit.inputvalue2} </p>
+    ) : ""
+    }
+    </>
     )
 }
 
